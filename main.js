@@ -45,9 +45,9 @@ function createWindow () {
   ipcMain.on('setAppTitle', function(event, arg) {
     let text = arg;
     if (text !== undefined && text !== null) {
-      text = `${text} - VoTT - ${module.exports.version}`;
+      text = `${text} - ObjDec - ${module.exports.version}`;
     } else {
-      text = `VoTT - ${module.exports.version}`;
+      text = `ObjDec - ${module.exports.version}`;
     }
     mainWindow.webContents.send('setAppTitleWithVersion', text);
   });

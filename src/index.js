@@ -497,7 +497,7 @@ function openPath(pathName, isDir, isRecords = false) {
             if(isRecords) $('head title').text(`Image Tagging from Records Job: ${videotagging.imagelist[0]}`); //set title indicator
 
             if (videotagging.imagelist.length){
-              //Check if tagging was done in previous version of VOTT
+              //Check if tagging was done in previous version of ObjDec
               if(!isNaN(Array.from(visitedFrames)[0])){
                 visitedFrames = new Set(Array.from(visitedFrames).map(frame => videotagging.imagelist[parseInt(frame)]))
                 
